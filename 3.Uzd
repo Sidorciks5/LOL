@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        double a, b, c, d;
+        Scanner sc = new Scanner(System.in);
+        //Lietotājs ievada L/100km
+        System.out.print("liters-per-100km: ");
+
+        //Kovertēšana no L/100km uz Mpg
+        a = sc.nextDouble();
+        b = 100 / a;
+        c = b * 3.8;
+        d = c / 1.6;
+
+        //Sistēmas izvadīšana vnk outputs
+        System.out.println("miles-per-gallon: " + d);
+
+    }
+}
